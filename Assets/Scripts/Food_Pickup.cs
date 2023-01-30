@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Food_Pickup : MonoBehaviour
 {
-    public GameObject FoodOnPlayer;
+
+    public GameObject Food;
 
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        FoodOnPlayer.SetActive(false);
+        Food.SetActive(false);
     }
+
+    
 
     private void OnTriggerStay(Collider other)
     {
@@ -21,10 +23,16 @@ public class Food_Pickup : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 this.gameObject.SetActive(false);
-
-                FoodOnPlayer.SetActive(true);
+                Food.SetActive(true);
+            }
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.F))
+            {
+                Instantiate(Food, transform.position, transform.rotation);
+                Debug.Log("Object created?");
             }
         }
     }
-
 }
