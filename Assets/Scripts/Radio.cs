@@ -7,7 +7,7 @@ public class Radio : MonoBehaviour
     private AudioSource audioSource;
     void Start()
     {
-        audioSource = GetComponent<AudioSource>(); 
+        audioSource = FindObjectOfType<AudioSource>();
         audioSource.loop = false;
     }
     private AudioClip GetRandomClip()

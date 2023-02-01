@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Fire
   - FireLayer
-  - Food
-  - Music
   layers:
   - Default
   - TransparentFX
