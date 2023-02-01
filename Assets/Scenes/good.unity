@@ -1311,7 +1311,8 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: 8a814d1e2cf62a644bfebe65a5b10904, type: 3}
   - {fileID: 8300000, guid: acf190053eb0286419fbb030d1c8e4e2, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 563262c423120ca4caaf39e1dfe3625e, type: 3}
+  - {fileID: 8300000, guid: 350f19c860b8fca49a0a7fb5931aa65a, type: 3}
 --- !u!4 &570411130
 Transform:
   m_ObjectHideFlags: 0
@@ -1339,7 +1340,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.45
   m_Pitch: 1
   Loop: 0
   Mute: 0
