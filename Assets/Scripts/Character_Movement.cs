@@ -5,7 +5,6 @@ using UnityEngine;
 public class Character_Movement : MonoBehaviour
 {
     public CharacterController controller;
-
     public float speed = 5f;
 
     
@@ -22,8 +21,8 @@ public class Character_Movement : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-
         Vector3 direction = new Vector3(horizontal, 0f, vertical);
+        this.transform.position = new Vector3(this.transform.position.x, 2.1407f, this.transform.position.z);
 
         if(direction.magnitude >= 0.1f)
         {
