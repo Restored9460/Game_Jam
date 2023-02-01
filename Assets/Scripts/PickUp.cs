@@ -34,13 +34,15 @@ public class PickUp : MonoBehaviour
 
         pickUpDistance = Vector3.Distance(player.position, transform.position);
 
-        if (pickUpDistance <= 2)
+        if (pickUpDistance <= 3)
         {
             if (Input.GetKeyDown(KeyCode.E) && itemIsPicked == false && PickUpPoint.childCount < 1)
             {
                 GetComponent<Rigidbody>().useGravity = false;
                 GetComponent<BoxCollider>().enabled = false;
+                rb.velocity = new Vector3(0, 0, 0);
                 this.transform.position = PickUpPoint.position;
+                rb.freezeRotation = true;
                 this.transform.parent = GameObject.Find("PickUpPoint").transform;
 
                 itemIsPicked = true;
@@ -58,6 +60,7 @@ public class PickUp : MonoBehaviour
                 this.transform.parent = null;
                 GetComponent<Rigidbody>().useGravity = true;
                 GetComponent<BoxCollider>().enabled = true;
+                rb.freezeRotation = false;
                 itemIsPicked = false;
 
                 forceMulti = 0;
