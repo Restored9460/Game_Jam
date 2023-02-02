@@ -13,6 +13,7 @@ TagManager:
   - emptyBowl
   - Flour
   - Dough
+  - cookedBeetroot
   layers:
   - Default
   - TransparentFX
