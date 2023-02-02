@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519eb3dda8697504e8030dde3311d72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cut: {fileID: 2835580327808046733, guid: eb13068142450ea41af8565e50ec14a6, type: 3}
+  cut: {fileID: 9124558162911574664, guid: adf3a0bacd9e1e648bdee3b234612b0f, type: 3}
 --- !u!65 &213080359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4709,28 +4709,14 @@ GameObject:
   - component: {fileID: 2091549448}
   - component: {fileID: 2091549447}
   - component: {fileID: 2091549446}
-  - component: {fileID: 2091549445}
+  - component: {fileID: 2091549449}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!64 &2091549445
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091549444}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2091549446
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4790,12 +4776,25 @@ Transform:
   m_GameObject: {fileID: 2091549444}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.6200795, y: 0, z: 0.50001}
-  m_LocalScale: {x: 2.9044538, y: 0.81315446, z: 1.6139488}
+  m_LocalScale: {x: 2.9044538, y: 0.16542001, z: 1.6139488}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1651951145}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2091549449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091549444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 14.537339, z: 10}
+  m_Center: {x: 0, y: -7.2686696, z: 0}
 --- !u!4 &2098026588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bc2ae1fa5d8e5884f84e510c99ed8884, type: 3}

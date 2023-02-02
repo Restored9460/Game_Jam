@@ -21,7 +21,7 @@ public class CuttingBoard : MonoBehaviour
     {
         if (other.tag == "Beetroot")
         {
-            Instantiate(cut);
+            Instantiate(cut, new Vector3(-7.576188f, 3, -8.3123f), Quaternion.identity);
             Destroy(other.gameObject);
         }
     }
