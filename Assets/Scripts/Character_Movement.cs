@@ -5,7 +5,10 @@ using UnityEngine;
 public class Character_Movement : MonoBehaviour
 {
     public CharacterController controller;
+    Vector3 turnVelocity;
+    public float rotationSpeed = 90;
     public float speed = 5f;
+
 
     
 
@@ -27,7 +30,9 @@ public class Character_Movement : MonoBehaviour
         if(direction.magnitude >= 0.1f)
         {
             controller.Move(direction * speed * Time.deltaTime);
+                turnVelocity = transform.up * rotationSpeed * horizontal; 
         }
+        
     }
     
 }
