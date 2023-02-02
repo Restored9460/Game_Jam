@@ -10,6 +10,6 @@ public class Spinning : MonoBehaviour
     void Update()
     {
         transform.Rotate(0f, speed * Time.deltaTime, speed * Time.deltaTime, Space.Self);
-        transform.position = new Vector3(0, Mathf.Sin(Time.time)* amp, 0);
+        transform.position = new Vector3(397, Mathf.Sin(Time.time)* amp, -11);
     }
 }
