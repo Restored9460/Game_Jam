@@ -6885,7 +6885,11 @@ PrefabInstance:
       objectReference: {fileID: 456473766}
     - target: {fileID: 7007770458856153254, guid: 35396070ba1c9634980f5f92f26c23bc, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7007770458856153254, guid: 35396070ba1c9634980f5f92f26c23bc, type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 7007770458856153255, guid: 35396070ba1c9634980f5f92f26c23bc, type: 3}
       propertyPath: target
