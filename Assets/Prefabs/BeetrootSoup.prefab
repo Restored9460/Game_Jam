@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1314853146407362029}
   - component: {fileID: 3749074008026187714}
   - component: {fileID: 938402457718968680}
+  - component: {fileID: 6911481045518211442}
   m_Layer: 0
   m_Name: BeetrootSoup
   m_TagString: Untagged
@@ -132,3 +133,15 @@ MonoBehaviour:
   forceMulti: 0
   readyToThrow: 0
   itemIsPicked: 0
+--- !u!114 &6911481045518211442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6425778573572317242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 920c3734425b405428207fbceaf96e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -11,6 +11,9 @@ TagManager:
   - CutBeetroot
   - PotBeet
   - emptyBowl
+  - Flour
+  - Dough
+  - cookedBeetroot
   layers:
   - Default
   - TransparentFX
