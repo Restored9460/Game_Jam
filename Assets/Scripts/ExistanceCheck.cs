@@ -5,6 +5,7 @@ using UnityEngine;
 public class ExistanceCheck : MonoBehaviour
 {
     [SerializeField] GameObject beet;
+    [SerializeField] GameObject bowl;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,12 @@ public class ExistanceCheck : MonoBehaviour
             Instantiate(beet, new Vector3(-12.5745f, 3, 7.01f), Quaternion.identity);
         }
 
-
+        if (GameObject.FindGameObjectsWithTag("emptyBowl").Length == 0)
+        {
+            Instantiate(bowl, new Vector3(-4.5652f, 2.5f, -8.3123f), Quaternion.identity);
+            Instantiate(bowl, new Vector3(-4.5652f, 3.0f, -8.3123f), Quaternion.identity);
+            Instantiate(bowl, new Vector3(-4.5652f, 3.5f, -8.3123f), Quaternion.identity);
+        }
 
 
     }

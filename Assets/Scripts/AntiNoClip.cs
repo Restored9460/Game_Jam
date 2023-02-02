@@ -8,7 +8,7 @@ public class AntiNoClip : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-       
+       rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class AntiNoClip : MonoBehaviour
     {
         if(other.tag == "outOfMap")
         {
-            this.transform.position = new Vector3(2, 2, 2);
+            this.rb.velocity = new Vector3(-this.rb.velocity.x, this.rb.velocity.y, -this.rb.velocity.z);
         }
     }
 }

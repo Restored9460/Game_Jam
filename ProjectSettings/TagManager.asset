@@ -8,6 +8,9 @@ TagManager:
   - FireLayer
   - Beetroot
   - outOfMap
+  - CutBeetroot
+  - PotBeet
+  - emptyBowl
   layers:
   - Default
   - TransparentFX
