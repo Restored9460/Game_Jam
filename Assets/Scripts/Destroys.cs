@@ -18,6 +18,7 @@ public class Destroys : MonoBehaviour
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "emptyBowl")
         {
+
             GameObject varGameObject = GameObject.FindWithTag("Customer");
             varGameObject.GetComponent<CustomerKiller>().enabled = true;
             Debug.Log("Walks away");
