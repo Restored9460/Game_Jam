@@ -6,6 +6,7 @@ public class ExistanceCheck : MonoBehaviour
 {
     [SerializeField] GameObject beet;
     [SerializeField] GameObject bowl;
+    [SerializeField] GameObject flour;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,12 @@ public class ExistanceCheck : MonoBehaviour
             Instantiate(bowl, new Vector3(-4.5652f, 3.5f, -8.3123f), Quaternion.identity);
         }
 
+        if (GameObject.FindGameObjectsWithTag("Flour").Length == 0)
+        {
+            Instantiate(flour, new Vector3(-12.54926f, 2.4543f, -6.8579f), Quaternion.identity);
+            Instantiate(flour, new Vector3(-12.67956f, 2.4745f, -5.857662f), Quaternion.identity);
+            Instantiate(flour, new Vector3(-11.91662f, 2.5048f, -5.328232f), Quaternion.identity);
+        }
 
     }
 }
