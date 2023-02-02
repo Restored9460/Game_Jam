@@ -10,7 +10,7 @@ public class Destroys : MonoBehaviour
         if (collision.gameObject.name == "Order")
         {
             //If the GameObject's name matches the one you suggest, output this message in the console
-            GameObject varGameObject = GameObject.FindWithTag("Fire");
+            GameObject varGameObject = GameObject.FindWithTag("Customer");
             varGameObject.GetComponent<Navigation>().enabled = false;
             Debug.Log("HE talking");
         }
@@ -18,7 +18,8 @@ public class Destroys : MonoBehaviour
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "emptyBowl")
         {
-            //If the GameObject has the same tag as specified, output this message in the console
+            GameObject varGameObject = GameObject.FindWithTag("Customer");
+            varGameObject.GetComponent<CustomerKiller>().enabled = true;
             Debug.Log("Walks away");
         }
     }

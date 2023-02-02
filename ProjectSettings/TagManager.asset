@@ -14,6 +14,7 @@ TagManager:
   - Flour
   - Dough
   - cookedBeetroot
+  - Customer
   layers:
   - Default
   - TransparentFX
