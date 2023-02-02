@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class AntiNoClip : MonoBehaviour
 {
+    Rigidbody rb;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -17,6 +18,15 @@ public class AntiNoClip : MonoBehaviour
         {
             this.transform.position = new Vector3(this.transform.position.x, 2, this.transform.position.z);
         }
+      
            
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "outOfMap")
+        {
+            this.transform.position = new Vector3(2, 2, 2);
+        }
     }
 }

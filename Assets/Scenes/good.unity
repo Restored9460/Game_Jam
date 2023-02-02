@@ -556,6 +556,8 @@ GameObject:
   - component: {fileID: 213080356}
   - component: {fileID: 213080355}
   - component: {fileID: 213080354}
+  - component: {fileID: 213080359}
+  - component: {fileID: 213080358}
   m_Layer: 0
   m_Name: ChoppingBoard
   m_TagString: Untagged
@@ -634,7 +636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213080353}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5761876, y: 2.0503, z: -8.7567}
+  m_LocalPosition: {x: -7.5761876, y: 2.0503, z: -8.3123}
   m_LocalScale: {x: 1.3366, y: 0.0703805, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -642,6 +644,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &213080358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213080353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519eb3dda8697504e8030dde3311d72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cut: {fileID: 2835580327808046733, guid: eb13068142450ea41af8565e50ec14a6, type: 3}
+--- !u!65 &213080359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213080353}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 3.4791164, z: 1}
+  m_Center: {x: 0, y: 1.2395586, z: 0}
 --- !u!1001 &217557169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -877,6 +905,79 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc2ae1fa5d8e5884f84e510c99ed8884, type: 3}
+--- !u!1 &305791648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 305791650}
+  - component: {fileID: 305791649}
+  - component: {fileID: 305791652}
+  - component: {fileID: 305791651}
+  m_Layer: 0
+  m_Name: AntiNoClipBox
+  m_TagString: outOfMap
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &305791649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305791648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18.797422, y: 4.2907615, z: 30.883455}
+  m_Center: {x: 3.7053633, y: 1.6453807, z: 2.9044027}
+--- !u!4 &305791650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305791648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.431704, y: -1.6135108, z: -3.0620787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &305791651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305791648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 33.6037, y: 8.073909, z: 13.00116}
+  m_Center: {x: -16.30185, y: 3.5369544, z: 18.061512}
+--- !u!65 &305791652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305791648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 36.798466, y: 8.128673, z: 17.096645}
+  m_Center: {x: -17.899233, y: 3.5643363, z: -14.888586}
 --- !u!4 &335504051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4598602536926299794, guid: f744bdb89983d9f4d813b4275c04da0f, type: 3}
@@ -4977,13 +5078,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 469293406}
     m_Modifications:
+    - target: {fileID: 5500241034435273828, guid: 59a8f95c06c975943a15b1b5c27195c5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7044278433861182982, guid: 59a8f95c06c975943a15b1b5c27195c5, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7044278433861182982, guid: 59a8f95c06c975943a15b1b5c27195c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.352
+      value: 0.35300064
       objectReference: {fileID: 0}
     - target: {fileID: 7044278433861182982, guid: 59a8f95c06c975943a15b1b5c27195c5, type: 3}
       propertyPath: m_LocalPosition.y

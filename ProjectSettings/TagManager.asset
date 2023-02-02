@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - FireLayer
+  - Beetroot
+  - outOfMap
   layers:
   - Default
   - TransparentFX
