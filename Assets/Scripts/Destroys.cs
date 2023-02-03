@@ -19,19 +19,19 @@ public class Destroys : MonoBehaviour
         }
         if (collision.gameObject.tag == "Sandwich")
         {
-         // beetroot and dough spawns
+            Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "Soup")
         {
-            //nowl and beetroot spawns
+            Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "PotBeet")
         {
-//pot and beetroot spawns
+            Destroy(collision.gameObject);
         }
 
         //change the tag here to make the npc to other food has to be a tab btw
-        if (collision.gameObject.tag == "Finish" || collision.gameObject.tag == "Soup" || collision.gameObject.tag == "PotBeet")
+        if (collision.gameObject.tag == "Sandwich" || collision.gameObject.tag == "Soup" || collision.gameObject.tag == "PotBeet")
         {
             
             
