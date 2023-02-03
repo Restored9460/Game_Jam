@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Destroys : MonoBehaviour
 {
+
     void OnCollisionEnter(Collision collision)
     {
         
@@ -13,6 +14,11 @@ public class Destroys : MonoBehaviour
             GameObject varGameObject = GameObject.FindWithTag("Customer");
             varGameObject.GetComponent<Navigation>().enabled = false;
            
+            
+        }
+        if (collision.gameObject.tag == "Flour")
+        {
+            Destroy(collision.gameObject);
         }
 
         //change the tag here to make the npc to other food has to be a tab btw
