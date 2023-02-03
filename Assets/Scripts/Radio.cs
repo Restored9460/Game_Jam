@@ -6,6 +6,7 @@ public class Radio : MonoBehaviour
     public AudioClip[] clips;
     private AudioSource audioSource;
     void Start()
+    
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.loop = false;

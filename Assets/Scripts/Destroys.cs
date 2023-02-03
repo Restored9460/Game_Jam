@@ -6,6 +6,7 @@ public class Destroys : MonoBehaviour
 {
 
     void OnCollisionEnter(Collision collision)
+    
     {
         
         if (collision.gameObject.name == "Order")
@@ -16,20 +17,27 @@ public class Destroys : MonoBehaviour
            
             
         }
-        if (collision.gameObject.tag == "Flour")
+        if (collision.gameObject.tag == "Sandwich")
         {
-            Destroy(collision.gameObject);
+         // beetroot and dough spawns
+        }
+        if (collision.gameObject.tag == "Soup")
+        {
+            //nowl and beetroot spawns
+        }
+        if (collision.gameObject.tag == "PotBeet")
+        {
+//pot and beetroot spawns
         }
 
         //change the tag here to make the npc to other food has to be a tab btw
-        if (collision.gameObject.tag == "Flour" || collision.gameObject.tag == "Bowl")
+        if (collision.gameObject.tag == "Finish" || collision.gameObject.tag == "Soup" || collision.gameObject.tag == "PotBeet")
         {
             
             
                 GameObject varGameObject = GameObject.FindWithTag("Customer");
                 varGameObject.GetComponent<CustomerKiller>().enabled = true;
-                Debug.Log("works");
-            
+                
         }
     }
 }
