@@ -18,6 +18,7 @@ TagManager:
   - Food
   - forSandwich
   - Sandwich
+  - Soup
   layers:
   - Default
   - TransparentFX
