@@ -12,12 +12,14 @@ public class Navigation : MonoBehaviour
   
     public void Update()
     {
+        // this makes him run
      
         transform.Translate(Vector3.Normalize(target.position - transform.position) * step);
 
     }
     void OnCollisionEnter(Collision collision)
     {
+        // same if codes used as before
          if (collision.gameObject.name == "CubeofDeath")
         {
             Order.transform.position = Reset.transform.position;
