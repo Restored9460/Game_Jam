@@ -2522,6 +2522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cut: {fileID: 9124558162911574664, guid: adf3a0bacd9e1e648bdee3b234612b0f, type: 3}
+  sandwich: {fileID: 1045436511042547204, guid: 6b5cb05cca6070f45adf649a0cda149f, type: 3}
 --- !u!4 &872188747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bc2ae1fa5d8e5884f84e510c99ed8884, type: 3}
@@ -5866,6 +5867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cut: {fileID: 0}
+  sandwich: {fileID: 0}
 --- !u!4 &1904713697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13dca8ceeee636a44876eed56360d181, type: 3}

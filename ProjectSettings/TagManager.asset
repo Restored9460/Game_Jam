@@ -15,6 +15,9 @@ TagManager:
   - Dough
   - cookedBeetroot
   - Customer
+  - Food
+  - forSandwich
+  - Sandwich
   layers:
   - Default
   - TransparentFX
