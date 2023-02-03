@@ -15,13 +15,15 @@ public class Destroys : MonoBehaviour
            
         }
 
-        //chane the tag here to make the npc to other food
-        if (collision.gameObject.tag == "PotBeet")
+        //change the tag here to make the npc to other food has to be a tab btw
+        if (collision.gameObject.tag == "Flour" || collision.gameObject.tag == "Bowl")
         {
-
-            GameObject varGameObject = GameObject.FindWithTag("Customer");
-            varGameObject.GetComponent<CustomerKiller>().enabled = true;
-           
+            
+            
+                GameObject varGameObject = GameObject.FindWithTag("Customer");
+                varGameObject.GetComponent<CustomerKiller>().enabled = true;
+                Debug.Log("works");
+            
         }
     }
 }
