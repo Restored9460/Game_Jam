@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -7204208410457926143}
   - component: {fileID: 8675683474901917729}
   - component: {fileID: 1659307961478646368}
+  - component: {fileID: 2032348640333812505}
   m_Layer: 0
   m_Name: Beetroot Sandwich
   m_TagString: Sandwich
@@ -133,3 +134,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2032348640333812505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045436511042547204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 920c3734425b405428207fbceaf96e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
