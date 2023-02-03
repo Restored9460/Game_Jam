@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
         characterController.Move(moveVelocity * Time.deltaTime);
         transform.Rotate(turnVelocity * Time.deltaTime);
-        this.transform.position = new Vector3(this.transform.position.x, 2.1407f, this.transform.position.z);
+        //this.transform.position = new Vector3(this.transform.position.x, 2.1407f, this.transform.position.z);
     }
 
 }
